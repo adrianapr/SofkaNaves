@@ -1,18 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-* Checkbox question example
-* run example by typing `python example/checkbox.py` in your console
-"""
 from pprint import pprint
-
 from PyInquirer import prompt, Separator
-
 from preguntas.preguntasBase import questionsLayer1, questionsSeleccionarTipo
 from preguntas.preguntasBase import crearTipo1, crearTipo2, crearTipo3
-from nave_tipo1 import nave1
-from nave_tipo2 import nave2
-from nave_tipo3 import nave3
-
+from tiposNave.nave_tipo1 import nave1
+from tiposNave.nave_tipo2 import nave2
+from tiposNave.nave_tipo3 import nave3
 
 
 def  nave_tipo1():

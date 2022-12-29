@@ -1,4 +1,4 @@
-import nave
+from tiposNave import nave
 
 class nave2(nave.base):
     def __init__(self, nombre, pais_creacion, peso, n_id, velocidad_llegada):
