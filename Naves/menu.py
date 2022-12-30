@@ -7,10 +7,12 @@ from tiposNave.nave_tipo2 import nave2
 from tiposNave.nave_tipo3 import nave3
 
 
+
 def  nave_tipo1():
     values = prompt(crearTipo1)
     print(values)
     resultado = nave1(values["nombre_nave"], values["Pais_creacion"], values["Peso_nave"], values["n_id"], values["Capacidad_transporte"], values["Capacidad_empuje"])
+    resultado.guardarBaseDatos(values)
 
 
 
@@ -18,14 +20,13 @@ def  nave_tipo2():
     values = prompt(crearTipo2)
     print(values)
     resultado = nave2(values["nombre_nave"], values["Pais_creacion"], values["Peso_nave"], values["n_id"], values["Velocidad_llegada"])
-
-
+    resultado.guardarBaseDatos(values)
 
 def  nave_tipo3():
     values = prompt(crearTipo3)
     print(values)
     resultado = nave3(values["nombre_nave"], values["Pais_creacion"], values["Peso_nave"], values["n_id"], values["Capacidad_Personas"], values["Capacidad_Orbita"] )
-
+    resultado.guardarBaseDatos(values)
  
 def seleccionar_tipo():
     print("##### Vamos a crear tu nave, por favor dinos:")
