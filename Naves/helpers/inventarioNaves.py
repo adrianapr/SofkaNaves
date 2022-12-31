@@ -9,7 +9,7 @@ Lanzadera = [
         'Pais_creacion': 'EE.UU',
         'Peso_nave': '2900 toneladas',
         '_id': '1',
-        'Capacidad_transporte': ' 118 toneladas',
+        'Capacidad_transporte': '118 toneladas',
         'Capacidad_empuje': '3500 toneladas'
     },
     {
@@ -17,7 +17,7 @@ Lanzadera = [
         'Pais_creacion': 'EE.UU',
         'Peso_nave': '7300 toneladas',
         '_id': '2',
-        'Capacidad_transporte': ' 23 toneladas',
+        'Capacidad_transporte': '23 toneladas',
         'Capacidad_empuje': '8499 toneladas'
     },
     {
@@ -51,7 +51,7 @@ No_tripuladas = [
         'Pais_creacion': 'Europa ESA',
         'Peso_nave': '200 toneladas',
         '_id': '6',
-        'Velocidad_llegada': ' 1.6 millones de años'
+        'Velocidad_llegada': '1.6 millones de años'
     }
 ]
 

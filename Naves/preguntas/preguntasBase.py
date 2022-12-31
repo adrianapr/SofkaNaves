@@ -13,9 +13,7 @@ questionsLayer1 = [
              {
                 'name': 'salir'
             }
-        ],
-        'validate': lambda answer: 'You must choose at least one topping.' \
-            if len(answer) == 0 else True
+        ]
     }
 ]
 
