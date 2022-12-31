@@ -18,9 +18,9 @@ Correr con el comando: `python Naves/menu.py`
 
 ### Opcion 2
 
-Instalar docker y correr el script desde la terminal, este script es un simulador de lo que se podria hacer con un docker compose pero debido a que las librerias utilizadas tienen problema al unir las terminales , se creo el script para crear una red que permitiera conectarse con python y mongo.
+Instalar docker y correr el script (run: `./script.sh`) desde la terminal. Este script es un simulador de lo que se podria hacer con un docker compose pero debido a que las librerias utilizadas tienen problema al unir las terminales del contenedor con la del host, se creo el script para controlar a detalle la forma ejecucion de cada contenedor, ademas de crear una red que permitiera conectar la aplicacion con la base de datos.
 
 ## Como usar el proyecto
 
-El programa contiene inicialmente 9 naves almacenadas en una base de datos.
-Puede crear nuevas naves o buscar las existentes a traves del tipo de nave y el nro de ID, usando la interfaz por consola.
+A traves de la interfaz de consola, usando el teclado, se podran crear nuevas naves con caracteristicas especificas, o se podra utilizar la opcion de buscar las existentes en base a lo que el usuario requiera.
+Por defecto, se han almacenado 9 naves en la base de datos.
