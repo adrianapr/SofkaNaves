@@ -1,8 +1,8 @@
 from tiposNave import nave
 
 class nave3(nave.base):
-    def __init__(self,nombre, pais_creacion, peso, n_id, capacidad_personas, capacidad_orbita):
-        super().__init__(nombre, pais_creacion, peso, n_id)
-        self.capacidad_personas = capacidad_personas
-        self.capacidad_orbita = capacidad_orbita
-        self.tipo_nave = "Nave espacial tripulada"
+    def __init__(self, infoValues):
+        super().__init__(infoValues["nombre_nave"], infoValues["Pais_creacion"], infoValues["Peso_nave"], infoValues["_id"])
+        self.capacidad_personas = infoValues["Capacidad_Personas"]
+        self.capacidad_orbita = infoValues["Capacidad_Orbita"]
+        self.tipo_nave = "Tripulada"
