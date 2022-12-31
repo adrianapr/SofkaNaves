@@ -30,20 +30,23 @@ def  nave_tipo3():
 def buscarId():
     values = prompt(crearBusquedaPorId)
     result = database.buscarporId(values)
-    print("####### Estos son los datos de la nave selccionada: ")
-    print(result)
+    if result == None:
+        print("No se encontró nave con el ID que ingresaste, intenta nuevamente")
+    else: 
+        print("**** Estos son los datos de la nave seleccionada: ****")
+        print(result)
 
 
 def buscarporTipo():
     values = prompt(questionsSeleccionarTipo)
     results = database.buscarPorTipo(values)
-    print("####### Estos son los datos de las naves encontrada: ")
+    print("**** Estos son los datos de las naves encontradas: ****")
     for r in results:
         print(r)
 
  
 def seleccionar_tipo():
-    print("##### Vamos a crear tu nave, por favor dinos:")
+    print(">>>>> Vamos a crear tu nave, por favor dinos:")
     respuesta = prompt(questionsSeleccionarTipo)
     tipo_seleccionado = respuesta["tipo_nave"]
 
@@ -53,11 +56,11 @@ def seleccionar_tipo():
         nave_tipo2()
     elif tipo_seleccionado == "Tripulada":
         nave_tipo3()
-    print("Felicitaciones, tu nava ha sido creada exitosamete")
+    print("Felicitaciones, tu nave ha sido creada exitosamete")
 
 
 def buscar_tipo():
-    print("##### Vamos a buscar la nave")
+    print(">>>>> Vamos a buscar la nave")
     naveAbuscar = prompt(layerBuscar)
     filtro_seleccionado = naveAbuscar["naveBuscar"]
 
@@ -65,7 +68,6 @@ def buscar_tipo():
        buscarId()
     elif filtro_seleccionado == "Tipo":
         buscarporTipo()
-    print("Felicitaciones, tu nave ha sido encontrada")
 
 
 
