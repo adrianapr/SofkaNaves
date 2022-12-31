@@ -56,7 +56,7 @@ def seleccionar_tipo():
         nave_tipo2()
     elif tipo_seleccionado == "Tripulada":
         nave_tipo3()
-    print("Felicitaciones, tu nave ha sido creada exitosamete")
+    print("Felicitaciones, tu nave ha sido creada exitosamente")
 
 
 def buscar_tipo():
