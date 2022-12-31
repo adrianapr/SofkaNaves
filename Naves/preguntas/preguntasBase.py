@@ -13,10 +13,6 @@ questionsLayer1 = [
              {
                 'name': 'salir'
             }
-            ,
-             {
-                'name': 'continuar'
-            }
         ],
         'validate': lambda answer: 'You must choose at least one topping.' \
             if len(answer) == 0 else True
@@ -27,7 +23,7 @@ questionsSeleccionarTipo = [
     {
         'type': 'list',
         'message': 'Selecciona un tipo de nave',
-        'name': 'tipo',
+        'name': 'tipo_nave',
         'choices': [ 
             {
                 'name': 'Lanzadera'
@@ -49,11 +45,6 @@ crearTipo1 = [
         'name': 'nombre_nave',
         'message': 'Ingresar nombre de la nave',
         },
-         {
-        'type': 'input',
-        'name': 'nombre_lanzadera',
-        'message': 'nombre_lanzadera',
-        },
         { 'type': 'input',
         'name': 'Pais_creacion',
         'message': 'Ingrese el pais de creacion'
@@ -63,7 +54,7 @@ crearTipo1 = [
         'message': 'Ingresar el peso de la nave'
         },
         { 'type': 'input',
-        'name': 'n_id',
+        'name': '_id',
         'message': 'Ingresar el ID de la nave'
         },
         {'type': 'input',
@@ -84,11 +75,6 @@ crearTipo2 = [
         'name': 'nombre_nave',
         'message': 'Ingresar nombre de la nave',
         },
-        {
-        'type': 'input',
-        'name': 'nombre_no__tripulada',
-        'message': 'nombre_no__tripulada',
-        },
         { 'type': 'input',
         'name': 'Pais_creacion',
         'message': 'Ingrese el pais de creacion'
@@ -98,7 +84,7 @@ crearTipo2 = [
         'message': 'Ingresar el peso de la nave'
         },
         { 'type': 'input',
-        'name': 'n_id',
+        'name': '_id',
         'message': 'Ingresar el ID de la nave'
         },
         {'type': 'input',
@@ -115,11 +101,6 @@ crearTipo3 = [
         'name': 'nombre_nave',
         'message': 'Ingresar nombre de la nave',
         },
-         {
-        'type': 'input',
-        'name': 'nombre_tripulada',
-        'message': 'nombre_tripulada',
-        },
         { 'type': 'input',
         'name': 'Pais_creacion',
         'message': 'Ingrese el pais de creacion'
@@ -129,7 +110,7 @@ crearTipo3 = [
         'message': 'Ingresar el peso de la nave'
         },
         { 'type': 'input',
-        'name': 'n_id',
+        'name': '_id',
         'message': 'Ingresar el ID de la nave'
         },
         {'type': 'input',
@@ -139,5 +120,30 @@ crearTipo3 = [
         {'type': 'input',
         'name': 'Capacidad_Orbita',
         'message': 'Ingresar capacidad de Orbita'
+        },
+]
+
+layerBuscar = [
+    {
+        'type': 'list',
+        'message': 'Selecciona el dato a buscar',
+        'name': 'naveBuscar',
+        'choices': [ 
+            {
+                'name': 'Tipo'
+            },
+             {
+                'name': 'ID'
+            },
+        ],
+    }
+]
+
+
+crearBusquedaPorId = [
+        {
+        'type': 'input',
+        'name': '_id',
+        'message': 'Ingresar ID de la nave',
         },
 ]
