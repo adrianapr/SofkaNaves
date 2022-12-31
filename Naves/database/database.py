@@ -6,13 +6,14 @@ cliente = MongoClient(MONGO_URI)
 db = cliente['sofkanaves']
 collection= db['naves']
 
+        
+def guardarBaseDatos(document):
+    collection.insert_one(document)
 
 
-# results = collection.find({"nombre_nave":"Hola"})
-
-# for r in results:
-#     print(r)
-
-# result = collection.find_one({"nombre_nave":"Saturno"})
-# print(result)
-# result = collection.delete_many({})
+def buscarporId(query):
+    result = collection.find_one(query)
+    return result
+        
+def buscarPorTipo(query):
+    return collection.find(query)
