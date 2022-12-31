@@ -24,3 +24,6 @@ Instalar docker y correr el script (run: `./script.sh`) desde la terminal. Este 
 
 A traves de la interfaz de consola, usando el teclado, se podran crear nuevas naves con caracteristicas especificas, o se podra utilizar la opcion de buscar las existentes en base a lo que el usuario requiera.
 Por defecto, se han almacenado 9 naves en la base de datos.
+
+#### Video del proyecto
+https://youtu.be/GKdAXEh3aiQ
